@@ -3,6 +3,9 @@
   padding: 0;
   font-family: sans-serif;
 }
+:root {
+  --black: black;
+}
 .header {
   background-image: url(./Header/bg1.jpg);
   max-width: 100%;
@@ -30,35 +33,41 @@
   }
   .btn1:hover {
     padding-right: 20px;
-    background-color: black !important;
+    padding-left: 20px;
+    background-color: var(--black) !important;
   }
   .nav-item:hover {
     padding-left: 10px;
-    color: black !important;
+    color: var(--black) !important;
   }
   .nav-item {
     margin-left: 10px;
   }
   #menu:hover {
-    background-color: black !important;
+    background-color: var(--black) !important;
     padding-left: 20px;
+    padding-right: 20px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 426px) {
   .navbar {
     margin-left: -20px;
     width: 100%;
+  }
+  .header-text h1 {
+    font-size: 3em !important;
   }
 }
 @media screen and (min-width: 575px) {
   .nav-item:hover {
     padding: 0px 10px 0px 10px;
-    color: black !important;
+    color: var(--black) !important;
     text-decoration: underline;
   }
   .btn1:hover {
     padding-right: 20px;
-    background-color: black !important;
+    padding-left: 20px;
+    background-color: var(--black) !important;
   }
 }
 
@@ -84,10 +93,60 @@
   flex-wrap: wrap;
   align-content: center;
 }
-.header-text h2 {
-  border-left: 3px solid black;
-  height: 50px;
+.header-text h1 {
+  font-family: "PirateOne";
+  font-size: 4.5em;
+  color: var(--black);
+  font-weight: bolder;
 }
-.header-text h4{
+.header-text p {
+  margin-top: 90px;
+  font-weight: bold;
+}
+.header-text h2 {
+  border-left: 3px solid var(--black);
+  height: 80px;
+}
+.header-text h4 {
   width: 565px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.btn2 {
+  transition: all 0.5s ease !important;
+}
+.btn2:hover {
+  background-color: var(--black) !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.header-bot h5 {
+  width: 150px;
+  float: right;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 100px;
+}
+#dld {
+  font-size: 4em;
+  padding: 80px;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .header-text h1 {
+    font-size: 1.5em;
+  }
+  .header-text h4 {
+    width: 297px;
+    text-align: justify;
+  }
+  .btn1 {
+    position: absolute;
+    right: -80px !important;
+  }
+  #dld {
+    padding: 90px 0px 0px;
+  }
+  .navbar {
+    margin-left: 0px;
+  }
 }
