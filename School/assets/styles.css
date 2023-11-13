@@ -61,6 +61,10 @@
   .header-text h1 {
     font-size: 3em !important;
   }
+  .bor {
+    border-left: 3px solid var(--white);
+    height: 350px !important;
+  }
 }
 @media screen and (min-width: 575px) {
   .nav-item:hover {
@@ -145,12 +149,23 @@
 }
 .col-sm-4 {
   color: var(--white);
+  margin-top: 40px;
 }
 .col-sm-4 h2 {
   font-weight: bolder;
+  margin-top: 10px;
 }
 .col-sm-4 h4 a {
   color: var(--white);
+  margin-top: 10px;
+}
+span {
+  font-size: 2em;
+}
+.divtwo {
+  background-image: url(./divtwo/bg3.jpg);
+  width: 100%;
+  height: 730px;
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .header-text h1 {
@@ -169,5 +184,18 @@
   }
   .navbar {
     margin-left: 0px;
+  }
+  .col-sm-4 h4 a {
+    color: var(--white);
+    margin-top: 0px !important;
+  }
+  .bor {
+    border-left: none;
+  }
+  .row {
+    height: 290vh;
+  }
+  .col-sm-4 h4 {
+    border-bottom: 3px solid var(--white);
   }
 }
