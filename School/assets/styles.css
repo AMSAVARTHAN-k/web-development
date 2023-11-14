@@ -27,13 +27,23 @@
   right: 10px;
 }
 .nav-item:hover {
+  padding: 0px 10px 0px 10px;
   color: var(--black) !important;
+  text-decoration: underline;
 }
-@media screen and (max-width: 575px) {
+.btn1:hover {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--black) !important;
+}
+/* @media screen and (max-width: 575px) {
   .btn1 {
     position: absolute;
     top: 10px;
     transition: all 0.5s ease !important;
+  }
+  #menu {
+    font-size: 10px !important;
   }
   .btn1:hover {
     padding-right: 20px;
@@ -53,13 +63,19 @@
     padding-right: 20px;
   }
   .bor {
-    border: none;
+    border: none !important;
   }
   .col-sm-4 h4 {
-    border-bottom: 3px solid var(--white);
+    border-bottom: 3px solid var(--white) !important;
   }
-}
-@media screen and (max-width: 800px) and (min-width: 426px) {
+  .header-text h1 {
+    font-size: 2.5em !important;
+  }
+  .header-text h4 {
+    width: 475px !important;
+  }
+} */
+@media screen and (max-width: 800px) and (min-width: 576px) {
   .navbar {
     margin-left: -20px;
     width: 100%;
@@ -72,7 +88,7 @@
     height: 350px !important;
   }
 }
-@media screen and (min-width: 575px) {
+/* @media screen and (min-width: 575px) {
   .nav-item:hover {
     padding: 0px 10px 0px 10px;
     color: var(--black) !important;
@@ -83,7 +99,7 @@
     padding-left: 20px;
     background-color: var(--black) !important;
   }
-}
+} */
 
 .navbar-icon {
   font-size: 0.7em;
@@ -155,7 +171,7 @@
 }
 .col-sm-4 {
   color: var(--white);
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .col-sm-4 h2 {
   font-weight: bolder;
@@ -164,6 +180,14 @@
 .col-sm-4 h4 a {
   color: var(--white);
   margin-top: 10px;
+  transition: all 0.5s ease;
+  font-weight: 800;
+}
+.col-sm-4 h4 a:hover {
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(165, 147, 42);
 }
 span {
   font-size: 2em;
@@ -192,9 +216,10 @@ span {
   margin-right: 114px;
 }
 .img-1 button {
-  float: right;
-  margin-right: 34%;
+  position: absolute;
   transition: all 0.5s ease;
+  top: 77%;
+  left: 56%;
 }
 .img-1 button:hover {
   padding-right: 20px;
@@ -208,12 +233,37 @@ span {
   bottom: 49px;
   right: 37%;
 }
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .navbar {
+    position: relative !important;
+  }
+  .btn1 {
+    position: absolute;
+    top: 10px;
+    transition: all 0.5s ease !important;
+  }
+  .btn1:hover {
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--black) !important;
+  }
+  .nav-item:hover {
+    padding-left: 10px;
+    color: var(--black) !important;
+  }
+  #menu:hover {
+    background-color: var(--black) !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .header-text h1 {
     font-size: 1.5em;
   }
+  #menu {
+    font-size: 10px !important;
+  }
   .header-text h4 {
-    width: 297px;
+    width: 100%;
     text-align: justify;
   }
   .btn1 {
@@ -233,10 +283,39 @@ span {
   .bor {
     border-left: none;
   }
-  .row {
-    height: 315vh;
+  /* .row {
+    height: 220vh !important;
+  } */
+  .col-sm-4 {
+    margin-top: 40px !important;
   }
   .col-sm-4 h4 {
     border-bottom: 3px solid var(--white);
+  }
+  .img-1 img {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .img-1 h1 {
+    margin: 0px;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    float: none;
+    padding: 30px 0px 0px 50px;
+  }
+  .img-1 p {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .img-1 .btn {
+    margin-top: 10px;
+  }
+  .divtwo hr {
+    bottom: 0px;
+    left: 20%;
   }
 }

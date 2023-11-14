@@ -27,12 +27,14 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./assets/script.js"></script>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="bgs">
       <nav class="navbar navbar-expand-sm navbar-dark">
         <button
           id="menu"
+          onclick="toggleHeight()"
           class="navbar-toggler bg-secondary"
           type="button"
           data-toggle="collapse"
