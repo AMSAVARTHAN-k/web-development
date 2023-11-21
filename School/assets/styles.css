@@ -138,7 +138,7 @@
 span {
   font-size: 2em;
 }
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 782px) {
   .col-sm-4 h4 {
     font-size: 1rem !important;
   }
@@ -192,16 +192,17 @@ span {
 .img-1 img {
   padding-top: 150px;
 }
-@media screen and (min-width: 769px) and (max-width: 1220px) {
+@media screen and (min-width: 783px) and (max-width: 1220px) {
   .img-1 img {
     padding-top: 100px !important;
     width: 50%;
   }
   .img-1 h1 {
     margin: 0px !important;
-    width: 391px !important;
+    width: 383px !important;
     text-align: center;
-    padding-top: 66px !important;
+    font-size: 4rem !important;
+    padding-top: 75px !important;
   }
   .img-1 p {
     width: 403px !important;
@@ -247,6 +248,16 @@ span {
   right: 37%;
 }
 /* div-three start  */
+.batch2022 {
+  position: absolute;
+  bottom: 51px;
+}
+.batch2022 .row {
+  width: 85%;
+}
+.batch2022 .row h3 {
+  font-weight: 800;
+}
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .navbar {
     position: relative !important;
@@ -334,5 +345,17 @@ span {
     width: 100%;
     right: 0%;
     margin-top: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425) {
+  .img-1 img {
+    padding-top: 0px !important;
+  }
+  .img-1 h1 {
+    padding-top: 0px !important;
+  }
+  .batch2022 .row {
+    width: 101%;
+    font-size: 0.8rem;
   }
 }
