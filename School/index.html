@@ -183,33 +183,46 @@
       </div>
     </div>
     <div class="container-fluied footer">
-      <form action="/action_page.php">
+      <form action="/action_page.php" class="form">
         <div class="form-group">
           <input
             type="text"
             class="form-control"
-            placeholder="First Name"
-            id="email"
+            placeholder="First Name*"
+            id="txt"
+            required
           />
         </div>
         <div class="form-group">
           <input
             type="text"
             class="form-control"
-            placeholder="Last Name"
-            id="pwd"
+            placeholder="Last Name*"
+            id="txt"
+            required
           />
         </div>
         <div class="form-group">
           <input
             type="email"
             class="form-control"
-            placeholder="Email Subject"
-            id="pwd"
+            placeholder="Email Subject*"
+            id="email"
+            required
           />
         </div>
+        <div class="form-group">
+          <textarea
+            name="text"
+            id="ta"
+            placeholder="Write something hear... "
+            required
+          ></textarea>
+        </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-outline-dark btn2" id="lastbtn">
+          LEARN MORE
+        </button>
       </form>
     </div>
   </body>
