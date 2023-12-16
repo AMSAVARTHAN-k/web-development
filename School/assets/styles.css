@@ -6,6 +6,8 @@
 :root {
   --black: black;
   --white: white;
+  --litegray: rgb(218, 212, 212);
+  --gray: rgb(105, 102, 102);
 }
 .header {
   background-image: url(./Header/bg1.jpg);
@@ -146,12 +148,15 @@ form {
 }
 .form-group input,
 textarea {
-  background-color: rgb(218, 212, 212) !important;
+  background-color: var(--litegray) !important;
   color: black;
   height: 50px;
-  border-color: rgb(105, 102, 102);
+  border-color: var(--gray);
   border-width: 2px;
   font-size: 0.9em;
+}
+.form-group input:focus {
+  border-color: var(--black);
 }
 textarea {
   height: 300px;
@@ -162,6 +167,77 @@ textarea {
 #lastbtn {
   margin-left: 270px;
   margin-top: 30px;
+}
+form h1 {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+  padding-left: 10%;
+}
+.footer {
+  position: relative;
+}
+.lstdiv {
+  background-color: var(--black);
+  height: 500px;
+  width: 90%;
+  margin-left: 5%;
+  position: absolute;
+  bottom: 80px;
+  border-radius: 10px;
+  color: var(--white);
+}
+.links {
+  display: flex;
+  width: 93%;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  padding: 10px;
+}
+.links ul li a {
+  color: var(--litegray);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.links ul li a:hover {
+  padding-left: 20px;
+  color: var(--gray);
+}
+.lstdiv h1 {
+  font-weight: 900;
+  width: 50%;
+  padding: 52px;
+  font-family: "Times New Roman", Times, serif;
+}
+.lstdiv h3 {
+  float: right;
+  font-size: 1em;
+  padding-top: 70px;
+  padding-right: 35px;
+  font-weight: 600;
+}
+.lstdiv h4 {
+  font-weight: 700;
+  padding: 20px;
+  padding-left: 55px;
+}
+
+.title1 {
+  flex: 1;
+}
+.title2 {
+  flex: 1;
+}
+.title3 {
+  flex: 1;
+}
+.title4 {
+  flex: 1;
 }
 @media screen and (min-width: 576px) and (max-width: 782px) {
   .col-sm-4 h4 {
@@ -195,6 +271,17 @@ textarea {
     position: absolute;
     top: 68% !important;
     left: 5% !important;
+  }
+  form {
+    padding-left: 100px !important;
+    width: 85% !important;
+    padding-top: 100px !important;
+  }
+  .footer form h1 {
+    font-size: 2.5em !important;
+  }
+  #lastbtn {
+    margin-left: 40% !important;
   }
 }
 .col-sm-4 h4 {
@@ -246,6 +333,18 @@ textarea {
     position: absolute;
     top: 44%;
     right: 18% !important;
+  }
+  form h1 {
+    font-size: 3.5em !important;
+    padding-left: 5% !important;
+  }
+  form {
+    width: 80%;
+    padding-left: 22%;
+    padding-top: 150px !important;
+  }
+  #lastbtn {
+    margin-left: 40% !important;
   }
 }
 .img-1 p {
@@ -383,8 +482,46 @@ textarea {
     right: 0%;
     margin-top: 40px;
   }
+  /* this for footer form  */
+  .footer form {
+    padding: 17px !important;
+    width: 100%;
+  }
+  form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+    padding-left: 10%;
+  }
+  #lastbtn {
+    margin-left: 35% !important;
+  }
+  .links {
+    width: 100% !important;
+    padding-left: 0% !important;
+    padding-top: 2%;
+    font-size: 0.7em !important;
+    position: relative;
+  }
+  .lstdiv h1 {
+    width: 100% !important;
+    padding: 80px 0px 10px 10px !important;
+  }
+  .lstdiv h3 {
+    padding: 0px !important;
+    position: absolute;
+    bottom: 15px;
+    padding-left: 10px !important;
+  }
 }
+/* this is for school nam only  */
+
 /* this is for middele screen responsive  */
+@media screen and (min-width: 320px) and (max-width: 346px) {
+  .lstdiv h1 {
+    font-size: 2.2em !important;
+  }
+}
 @media screen and (min-width: 426px) and (max-width: 574px) {
   .batch2022 {
     bottom: 0px;
@@ -443,5 +580,8 @@ textarea {
   }
   .col-md-4 p {
     margin-bottom: 0px !important;
+  }
+  .lstdiv {
+    display: block;
   }
 }
