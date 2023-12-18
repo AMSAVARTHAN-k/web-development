@@ -8,3 +8,7 @@ function toggleHeight() {
   }
   isExpanded = !isExpanded;
 }
+
+function fun() {
+  window.alert("hello");
+}

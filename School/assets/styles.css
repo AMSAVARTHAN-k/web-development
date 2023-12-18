@@ -135,7 +135,7 @@
   text-decoration: none;
   padding-left: 20px;
   padding-right: 20px;
-  color: rgb(165, 42, 110);
+  color: cyan;
 }
 span {
   font-size: 2em;
@@ -155,8 +155,30 @@ textarea {
   border-width: 2px;
   font-size: 0.9em;
 }
+input:invalid {
+  animation: shake 350ms;
+}
+textarea {
+  border-radius: 5px;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0);
+    border-color: red;
+  }
+  25% {
+    transform: translate(0.325rem);
+    border-color: red;
+  }
+  75% {
+    transform: translate(-0.325rem);
+    border-color: red;
+  }
+}
 .form-group input:focus {
   border-color: var(--black);
+  outline: 0 !important;
 }
 textarea {
   height: 300px;
@@ -206,7 +228,7 @@ form h1 {
 }
 .links ul li a:hover {
   padding-left: 20px;
-  color: var(--gray);
+  color: cyan;
 }
 .lstdiv h1 {
   font-weight: 900;
@@ -583,5 +605,10 @@ form h1 {
   }
   .lstdiv {
     display: block;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 710px) {
+  .lstdiv h3 {
+    padding-right: 0px !important;
   }
 }

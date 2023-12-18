@@ -28,8 +28,9 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="./assets/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/school.png" />
   </head>
-  <body>
+  <body onkeydown="fun">
     <!-- first div st  -->
     <div class="header" id="bgs">
       <nav class="navbar navbar-expand-sm navbar-dark">
@@ -127,7 +128,7 @@
       </div>
       <hr />
 
-      <div class="batch2022">
+      <div class="batch2022" id="amsu">
         <h2>BATCH 2022</h2>
         <div class="row">
           <div class="col-md-4 text-dark batch">
@@ -185,13 +186,14 @@
     <div class="container-fluied footer">
       <form action="/action_page.php" class="form">
         <h1>NEWSLETTER</h1>
-        <div class="form-group">
+        <div class="form-group" id="fn">
           <input
             type="text"
             class="form-control"
             placeholder="First Name*"
             id="txt"
             required
+            pattern="[a-z]*"
           />
         </div>
         <div class="form-group">
@@ -200,6 +202,7 @@
             class="form-control"
             placeholder="Last Name*"
             id="txt"
+            pattern="[a-z]*"
             required
           />
         </div>
@@ -221,7 +224,12 @@
           ></textarea>
         </div>
 
-        <button type="submit" class="btn btn-outline-dark btn2" id="lastbtn">
+        <button
+          type="submit"
+          class="btn btn-outline-dark btn2"
+          id="lastbtn"
+          onclick="shakey"
+        >
           LEARN MORE
         </button>
       </form>
@@ -232,30 +240,30 @@
         <div class="links">
           <div class="title1">
             <ul>
-              <li><a href=""> History</a></li>
-              <li><a href=""> Our Team</a></li>
-              <li><a href=""> Brand Guidelines</a></li>
+              <li><a href="#"> History</a></li>
+              <li><a href="#"> Our Team</a></li>
+              <li><a href="#"> Brand Guidelines</a></li>
             </ul>
           </div>
           <div class="title2">
             <ul>
-              <li><a href=""> How to Order</a></li>
-              <li><a href="">Our product </a></li>
-              <li><a href=" ">Order Status</a></li>
+              <li><a href="#"> How to Order</a></li>
+              <li><a href="#">Our product </a></li>
+              <li><a href=" #">Order Status</a></li>
             </ul>
           </div>
           <div class="title3">
             <ul>
-              <li><a href="">Contact us</a></li>
-              <li><a href="">Help</a></li>
-              <li><a href="">Privacy</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy</a></li>
             </ul>
           </div>
           <div class="title4">
             <ul>
-              <li><a href="">Mission Statement</a></li>
-              <li><a href="">The Team</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a href="#">Mission Statement</a></li>
+              <li><a href="#">The Team</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
         </div>
